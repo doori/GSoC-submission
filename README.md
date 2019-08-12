@@ -23,7 +23,7 @@ Backend code and junit tests for clinical-data-count, clinical-data-bin-counts, 
 
 ### Performance Analysis documentation
 Performance analysis was done locally with small, medium, and large datasets. The results show that Spark implementation doesn't improve performance on small datasets, but it shows improved performance with some APIs and large datasets.  
-* [Performance document](./spark-parquet-performance.pdf)
+* [Performance Analysis document](./spark-parquet-performance.pdf)
 
 ### Presentation Slides presented to cBioPortal community (8/12/2019)
 All 6 GSoC students working with cBioPortal presented our projects in cBioPortal community meetings.
