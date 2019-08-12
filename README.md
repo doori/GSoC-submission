@@ -1,5 +1,5 @@
 # Google Summer of Code 2019
-This file summarizes the work done as park of Google Summer of Code 2019 project; it contains a list of github Pull Requests, performance analysis document, presentation slides, and code documentation.
+This file summarizes the work done as park of Google Summer of Code 2019 project; it contains a list of github pull requests, performance analysis document, presentation slides, and code documentation.
 
 ### Project Description: [Spark and Parquet Backend for cBioPortal Web API](https://summerofcode.withgoogle.com/projects/#5105508921376768) 
 cBioPortal utilizes a Spring MVC architecture with MyBatis for the persistence layer and a relational database (MySQL) for data storage. As the number and size of cancer datasets increase, high-performance computing and storage will only become more vital in providing an adequate cBioPortal user experience. The primary goals of this project are to use Spark and Parquet to improve the performance of the existing web APIs and to provide a high-performance computing platform for future development.
@@ -23,9 +23,9 @@ Backend code and junit tests for clinical-data-count, clinical-data-bin-counts, 
 
 ### Performance Analysis documentation
 Performance analysis was done locally with small, medium, and large datasets. The results show that Spark implementation doesn't improve performance on small datasets, but it shows improved performance with some APIs and large datasets.  
-* [Performance document](./spark-parquet-performance.pdf)) 
+* [Performance document](./spark-parquet-performance.pdf)
 
-### Presentation Slides presented (8/12/2019) to cBioPortal community
+### Presentation Slides presented to cBioPortal community (8/12/2019)
 All 6 GSoC students working with cBioPortal presented our projects in cBioPortal community meetings.
 My presentation slides include background of the project, Spark application components, Parquet writing utilities, performance, and Spark UI for monitoring the application.
 * [Spark and Parquet Backend for cBioPortal Web API](./spark-parquet-slides.pdf)
