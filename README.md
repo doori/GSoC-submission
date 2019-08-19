@@ -31,8 +31,8 @@ My presentation slides include the background of the project, Spark application 
 * [Spark and Parquet Backend for cBioPortal Web API](./spark-parquet-slides.pdf)
 
 ### Documentation
-* [Spark & Parquet properties](https://github.com/cBioPortal/cbioportal/blob/af549ac4726e47d7e142f148cf6d3057f232da8c/docs/portal.properties-Reference.md#spark--parquet)
-* [Study View Customization with Spark & Parquet](https://github.com/cBioPortal/cbioportal/blob/af549ac4726e47d7e142f148cf6d3057f232da8c/docs/Spark-Parquet-Data-Loading.md)
+* [Spark & Parquet properties](https://github.com/cBioPortal/cbioportal/blob/spark-parquet-persistence/docs/portal.properties-Reference.md#spark--parquet)
+* [Study View Customization with Spark & Parquet](https://github.com/cBioPortal/cbioportal/blob/spark-parquet-persistence/docs/Spark-Parquet-Data-Loading.md)
 
 ### Lessons Learned
 Incorporating a new technology stack to an existing application always comes with a number of challenges - from a hybrid mode or fully migrated approach to selecting the right technologies for the application. Presenting the project to the cBioPortal community resulted in good discussion and suggestions: possibly using a Cassandra databse that is scalable with low latency and testing Spark's parallelization in AWS. To migrate to Spark and Parquet technology stack, there are still some analysis and experiments that we should do in the environment that is comparable to cBioPortal production environment; however this proof of concept provides insights into what benefits we may get from using Spark and Parquet. 
