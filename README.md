@@ -23,12 +23,12 @@ Backend code and junit tests for clinical-data-count, clinical-data-bin-counts, 
 
 ### Performance Analysis documentation
 Performance analysis was done locally with small (1k), medium (10k), and large (60k, 240k samples) datasets. The results show that Spark implementation doesn't improve performance on small datasets, but it improves performance with some APIs and large datasets.  
-* [Performance Analysis document](./spark-parquet-performance.pdf)
+* [Performance analysis document (PDF)](./spark-parquet-performance.pdf)
 
 ### Presentation Slides presented to cBioPortal community (8/12/2019)
 All 6 GSoC students working with cBioPortal presented our projects in cBioPortal community meetings.
 My presentation slides include the background of the project, Spark application components, Parquet writing utilities, performance analysis, and Spark UI for monitoring the application.
-* [Spark and Parquet Backend for cBioPortal Web API](./spark-parquet-slides.pdf)
+* [Presentation slides (PDF)](./spark-parquet-slides.pdf)
 
 ### Documentation
 * [Spark & Parquet properties](https://github.com/cBioPortal/cbioportal/blob/spark-parquet-persistence/docs/portal.properties-Reference.md#spark--parquet)
