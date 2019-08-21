@@ -2,10 +2,10 @@
 This page summarizes the work done as part of Google Summer of Code 2019 project; it contains links to github pull requests, performance analysis document, presentation slides, and code documentation.
 
 ### Project Description: [Spark and Parquet Backend for cBioPortal Web API](https://summerofcode.withgoogle.com/projects/#5105508921376768) 
-cBioPortal utilizes a Spring MVC architecture with MyBatis for the persistence layer and a relational database (MySQL) for data storage. As the number and size of cancer datasets increase, high-performance computing and storage will only become more vital in providing an adequate cBioPortal user experience. The primary goals of this project are to use Spark and Parquet to improve the performance of the existing web APIs and to provide a high-performance computing platform for future development.
+cBioPortal utilizes a Spring MVC architecture with MyBatis for the persistence layer and a relational database (MySQL) for data storage. As the number and size of cancer datasets increase, high-performance computing and storage will only become more vital in providing an adequate cBioPortal user experience. The primary goal of this project was to create a prototype which improves performance of the existing web APIs that support the Study Summary View for large sample cohorts..
 
 ### Pull Requests
-All 7 APIs used in Study View page were implemented, reviewed and merged for the proof of concept.
+A utility for writing Parquet files and all 7 APIs used in Study Summary View page were implemented, reviewed and merged for the proof of concept.
 
 1. [Parquet writer utility & mutated-genes api](https://github.com/cBioPortal/cbioportal/pull/6334) - 
 Java program for writing data files into Parquet formated files and backend code and junit tests for mutated-genes/fetch api.
@@ -35,4 +35,4 @@ My presentation slides include the background of the project, Spark application 
 * [Study View Customization with Spark & Parquet](https://github.com/cBioPortal/cbioportal/blob/spark-parquet-persistence/docs/Spark-Parquet-Data-Loading.md)
 
 ### Lessons Learned
-Incorporating a new technology stack to an existing application always comes with a number of challenges - from a hybrid mode or fully migrated approach to selecting the right technologies for the application. Presenting the project to the cBioPortal community resulted in good discussion and suggestions: possibly using a Cassandra databse that is scalable with low latency and testing Spark's parallelization in AWS. To migrate to Spark and Parquet technology stack, there are still some analysis and experiments that we should do in the environment that is comparable to cBioPortal production environment; however this proof of concept provides insights into what benefits we may get from using Spark and Parquet. 
+Incorporating a new technology stack to an existing application always comes with a number of challenges - from a hybrid mode or fully migrated approach to selecting the right technologies for the application. Presenting the project to the cBioPortal community resulted in good discussion and suggestions: possibly using a Cassandra database that is scalable with low latency and testing Spark's parallelization in AWS. To migrate to Spark and Parquet technology stack, there are still some analysis and experiments that we should do in the environment that is comparable to cBioPortal production environment; however this proof of concept provides insights into what benefits we may get from using Spark and Parquet. 
