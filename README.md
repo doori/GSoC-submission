@@ -2,7 +2,7 @@
 This page summarizes the work done as part of Google Summer of Code 2019 project; it contains links to github pull requests, performance analysis document, presentation slides, and code documentation.
 
 ### Project Description: [Spark and Parquet Backend for cBioPortal Web API](https://summerofcode.withgoogle.com/projects/#5105508921376768) 
-cBioPortal utilizes a Spring MVC architecture with MyBatis for the persistence layer and a relational database (MySQL) for data storage. As the number and size of cancer datasets increase, high-performance computing and storage will only become more vital in providing an adequate cBioPortal user experience. The primary goal of this project was to create a prototype which improves performance of the existing web APIs that support the Study Summary View for large sample cohorts..
+cBioPortal utilizes a Spring MVC architecture with MyBatis for the persistence layer and a relational database (MySQL) for data storage. As the number and size of cancer datasets increase, high-performance computing and storage will only become more vital in providing an adequate cBioPortal user experience. The primary goal of this project was to create a prototype which improves performance of the existing web APIs that support the Study Summary View for large sample cohorts.
 
 ### Pull Requests
 A utility for writing Parquet files and all 7 APIs used in Study Summary View page were implemented, reviewed and merged for the proof of concept.
